@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Page08</title>
+</head>
+<body>
+    <!-- Table Tag ทำตาราง เป็น Block Tag ความกว้างเต็มพื้นที่ -->
+     <!-- ตารางทุกแถวที่มีช่องเท่ากัน -->
+    <table border="1" width="500px">
+        <caption>ตารางแสดงข้อมูล</caption>
+        <thead>
+            <tr>
+                <th>หัวข้อ 1</th>
+                <th>หัวข้อ 2</th>
+                <th>หัวข้อ 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Logo</td>
+                <td>Icon</td>
+                <td>Picture</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/logo.png" alt="Logo" style="width: 100px;">
+                </td>
+                <td>
+                    <img src="./images/icon.png" alt="Icon" style="width: 100px;">
+                </td>
+                <td>
+                    <img src="https://cdn.pixabay.com/photo/2023/11/06/16/31/mountain-8370051_1280.jpg" alt="Picture" style="width: 100px;">
+                </td>
+            </tr>
+        </tbody>
+
+        <!-- ตารางที่มีขนาดไม่เท่ากัน -->
+         <table>
+            <br><br><br>
+            <table border="1" width="600px">
+                <!-- Row 1 -->
+                <tr>
+                    <td>a</td>
+                    <td colspan="2">b</td>
+                    <td>c</td>
+                    <td>d</td>
+                </tr>
+
+                <!-- Row 2 -->
+                <tr>
+                    <td>e</td>
+                    <td>f</td>
+                    <td colspan="2" rowspan="2">g</td>
+                    <td>h</td>
+                </tr>
+
+                <!-- Row 3 -->
+                <tr>
+                    <td rowspan="2">i</td>
+                    <td>j</td>
+                    <td rowspan="2">k</td>
+                </tr>
+
+                <!-- Row 4 -->
+                <tr>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                </tr>
+            </table>
+         </table>
+</body>
+</html>
